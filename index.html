@@ -1,82 +1,95 @@
+<!-- Name of Site, Stylesheets Called, and Basic Info Set -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upcoming Events</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .event {
-            margin-bottom: 30px;
-            padding: 20px;
-            border-left: 4px solid #ff69b4;
-            background-color: #fff;
-        }
-        .event h3 {
-            color: #333;
-            margin-top: 0;
-        }
-        .event-date {
-            color: #666;
-            font-style: italic;
-        }
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        .header h1 {
-            color: #ff69b4;
-        }
-    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="Logo 3.png">
+    <title>MetroBuzz</title>
+    <link href="slideshow.css" rel="stylesheet" />
+    <link href="body.css" rel="stylesheet" />
 </head>
+
+<!-- Header -->
+
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Upcoming Events</h1>
-            <p>Join us for these exciting upcoming events in Washington, D.C.</p>
+    <hr width="100%" size="2">
+    <header>
+    <div>
+        <a href="Main Site.html">
+            <img src="Logo.png" alt="Logo" />
+        </a>
+    </div>
+    </header>
+    <hr width="100%" size="2">
+
+
+<!-- Navigation Bar -->
+<nav>
+    <ul class="nav">
+        <li><a href="#">Museums</a></li>
+        <li><a href="#">Food and Drink</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">My Itinerary</a></li>
+    </ul>
+</nav>
+
+<!-- Main Body / Slideshow -->
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="slim_Photo (1).png" style="width:100%">
         </div>
 
-        <div class="event">
-            <h3>Cherry Blossom Festival Opening Ceremony</h3>
-            <p class="event-date">March 20, 2024 | 5:00 PM</p>
-            <p>Join us for the grand opening ceremony of the National Cherry Blossom Festival. Experience traditional Japanese performances, music, and cultural demonstrations.</p>
-            <p>Location: Warner Theatre</p>
+        <div class="mySlides fade">
+            <img src="slim_Photo (2).png" style="width:100%">
         </div>
 
-        <div class="event">
-            <h3>Blossom Kite Festival</h3>
-            <p class="event-date">March 30, 2024 | 10:00 AM</p>
-            <p>Watch the skies fill with colorful kites on the grounds of the Washington Monument. Bring your own kite or watch the professionals demonstrate their skills.</p>
-            <p>Location: National Mall</p>
-        </div>
-
-        <div class="event">
-            <h3>UDC Cherry Blossom Celebration</h3>
-            <p class="event-date">April 5, 2024 | 2:00 PM</p>
-            <p>Celebrate 15 years of UDC's partnership with the National Cherry Blossom Festival. Enjoy campus tours, cultural performances, and cherry blossom viewing.</p>
-            <p>Location: UDC Campus</p>
-        </div>
-
-        <div class="event">
-            <h3>National Cherry Blossom Parade</h3>
-            <p class="event-date">April 13, 2024 | 10:00 AM</p>
-            <p>Don't miss the spectacular parade featuring colorful floats, marching bands, and performances celebrating spring and the cherry blossoms.</p>
-            <p>Location: Constitution Avenue</p>
+        <div class="mySlides fade">
+            <img src="slim_Photo (3).png" style="width:100%">
         </div>
     </div>
+
+<!-- Code That Makes Slideshow Work -->
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 8000); 
+        }
+    </script>
+
+<!-- Footer -->
+
+<hr width="100%" size="2">
+<footer>
+    <div class="center">
+        <a class="text" href="#">About Us</a>
+        ||
+        <a class="text" href="#">Contact Us</a>
+    </div>
+</footer>
+<hr width="100%" size="2">
+
 </body>
 </html>

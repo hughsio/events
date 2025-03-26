@@ -1,0 +1,123 @@
+/* ========== HEADER STYLES ========== */
+.header {
+    font-size: 24px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Centers the header content */
+    align-items: center;
+    padding: 10px;
+    width: 100%; /* Ensure the header takes up the full width */
+  }
+  
+  header div {
+    display: flex;
+    justify-content: center; /* Ensures the div is centered */
+    align-items: center; /* Aligns the image vertically */
+    width: 100%; /* Makes the div take the full width */
+  }
+  
+  header img {
+    width: 150px; /* Adjusted logo size to 150px */
+    height: auto; /* Keep aspect ratio intact */
+    max-width: 100%; /* Ensures logo never exceeds available space */
+  }
+  
+  /* ========== NAVIGATION STYLES ========== */
+  /* Makes the navigation bar horizontal */
+  .nav {
+    display: flex; 
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Aligns items vertically */
+    background-color: black; /* Navigation bar background changed to black */
+    padding: 15px 0; /* Increases height */
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+  }
+  
+  /* Ensures nav links are in a row */
+  .nav li {
+    display: inline-block; /* Forces items to stay in a horizontal line */
+    margin: 0 15px; /* Adds spacing between links */
+  }
+  
+  /* Style for navigation links */
+  .nav a {
+    text-decoration: none;
+    color: white; /* White text for nav links */
+    font-size: 22px; /* Makes the nav text bigger */
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
+  }
+  
+  /* Hover effect for nav links */
+  .nav a:hover {
+    background-color: red; /* Hover effect with red background */
+    border-radius: 5px;
+  }
+  
+  /* Add space above the slideshow */
+  .slideshow-container {
+    margin-top: 40px; 
+    margin-bottom: 40px; 
+  }
+  
+  /* ========== FOOTER STYLES ========== */
+  /* Makes the footer smaller */
+  footer {
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 0; /* Reduces footer height */
+    background-color: black; /* Footer background changed to black */
+    color: white; /* White text in footer */
+  }
+  
+  /* Footer links styling */
+  .text {
+    text-decoration: none; /* Removes the underline */
+    color: white; /* White text by default */
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth transition for color change */
+  }
+  
+  /* Hover effect for footer links */
+  .text:hover {
+    color: red; /* Change color to red on hover */
+  }
+  
+  
+  /* ========== RESPONSIVE DESIGN ========== */
+  /* Adjusts header, nav, and footer sizes for different screens */
+  @media (max-width: 1500px) {
+    .header {
+      font-size: 20px;
+    }
+    .nav a {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .header {
+      font-size: 18px;
+    }
+    .nav {
+      flex-direction: column; /* Stacks nav links vertically for smaller screens */
+      text-align: center;
+      padding: 10px;
+    }
+    .nav li {
+      margin: 5px 0;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .header {
+      font-size: 16px;
+    }
+    .footer-links {
+      font-size: 12px;
+    }
+  }
+  

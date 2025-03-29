@@ -5,10 +5,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="/images/Logo 3.png 3.png">
-    <title>MetroBuzz</title>
+    <link rel="icon" href="/images/Logo 3.png">
+    <title>DC EventBuzz - Find Events in Washington, DC</title>
     <link href="slideshow.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <!-- Header -->
@@ -18,78 +19,216 @@
     <header>
     <div>
         <a href="index.html">
-            <img src="/images/Logo 3.png" alt="Logo" />
+            <img src="/images/Logo 3.png" alt="DC EventBuzz Logo" />
         </a>
+    </div>
+    <div>
+        <h1 class="header-1"> Welcome to EventBuzz</h1>
     </div>
     </header>
     <hr width="100%" size="2">
 
+<!-- Search Section -->
+<div class="search-container">
+    <div class="search-box">
+        <input type="text" placeholder="Search events, venues, or categories...">
+        <button type="submit">Search</button>
+    </div>
+    <div class="filter-options">
+        <select>
+            <option value="">All Categories</option>
+            <option value="music">Music</option>
+            <option value="sports">Sports</option>
+            <option value="arts">Arts & Culture</option>
+            <option value="food">Food & Drink</option>
+            <option value="community">Community</option>
+        </select>
+        <select>
+            <option value="">All Dates</option>
+            <option value="today">Today</option>
+            <option value="week">This Week</option>
+            <option value="month">This Month</option>
+        </select>
+    </div>
+</div>
 
 <!-- Navigation Bar -->
 <nav>
     <ul class="nav">
-        <li><a href="#">Museums</a></li>
-        <li><a href="#">Food and Drink</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">My Itinerary</a></li>
+        <li><a href="#">Featured Events</a></li>
+        <li><a href="#">Music & Concerts</a></li>
+        <li><a href="#">Sports & Recreation</a></li>
+        <li><a href="#">Arts & Culture</a></li>
+        <li><a href="#">Food & Drink</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">My Events</a></li>
     </ul>
 </nav>
 
 <!-- Main Body / Slideshow -->
 
     <div class="slideshow-container">
-
         <div class="mySlides fade">
-            <img src="/images/slim_Photo (1).png" style="width:100%">
+            <img src="/images/image-dc1.png" alt="DC Concert Event" style="width:100%">
+            <div class="slide-caption">DC Jazz Festival 2024</div>
         </div>
 
         <div class="mySlides fade">
-            <img src="/images/slim_Photo (2).png" style="width:100%">
+            <img src="/images/event3.jpg" alt="DC Sports Event" style="width:100%">
+            <div class="slide-caption">Washington Nationals Game</div>
         </div>
 
         <div class="mySlides fade">
-            <img src="/images/slim_Photo (3).png" style="width:100%">
+            <img src="/images/event5.jpg" alt="DC Arts Event" style="width:100%">
+            <div class="slide-caption">Smithsonian Art Exhibition</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="/images/event7.jpg" alt="image" style="width: 100%;">
+
         </div>
     </div>
 
-<!-- Code That Makes Slideshow Work -->
+<!-- Featured Events Section -->
+<div class="featured-events">
+    <h2>Featured Events This Week</h2>
+    <div class="events-grid">
+        <div class="event-card">
+            <img src="/images/event1.jpg" alt="DC Food Festival">
+            <h3>DC Food & Wine Festival</h3>
+            <p>June 15-17, 2024</p>
+            <p>National Mall</p>
+            <button class="ticket-btn">Get Tickets</button>
+        </div>
+        <div class="event-card">
+            <img src="/images/event2.jpg" alt="DC Music Festival">
+            <h3>DC Jazz Festival</h3>
+            <p>June 20-25, 2024</p>
+            <p>Various Venues</p>
+            <button class="ticket-btn">Get Tickets</button>
+        </div>
+        <div class="event-card">
+            <img src="/images/event3.jpg" alt="DC Arts Festival">
+            <h3>Smithsonian Folklife Festival</h3>
+            <p>June 28-July 1, 2024</p>
+            <p>National Mall</p>
+            <button class="ticket-btn">Get Tickets</button>
+        </div>
+        <div class="event-card">
+            <img src="/images/event4.jpg" alt="DC Sports Event">
+            <h3>Washington Nationals vs. Braves</h3>
+            <p>June 22, 2024</p>
+            <p>Nationals Park</p>
+            <button class="ticket-btn">Get Tickets</button>
+        </div>
+        <div class="event-card">
+            <img src="/images/event5.jpg" alt="DC Theater Event">
+            <h3>Hamilton at Kennedy Center</h3>
+            <p>June 23-25, 2024</p>
+            <p>Kennedy Center</p>
+            <button class="ticket-btn">Get Tickets</button>
+        </div>
+        <div class="event-card">
+            <img src="/images/event6.jpg" alt="DC Museum Event">
+            <h3>National Gallery Art Tour</h3>
+            <p>June 24, 2024</p>
+            <p>National Gallery of Art</p>
+            <button class="ticket-btn">Free Entry</button>
+        </div>
+        <div class="event-card">
+            <img src="/images/event7.jpg" alt="DC Comedy Event">
+            <h3>DC Improv Comedy Night</h3>
+            <p>June 26, 2024</p>
+            <p>DC Improv Club</p>
+            <button class="ticket-btn">Get Tickets</button>
+        </div>
+        <div class="event-card">
+            <img src="/images/event8.jpg" alt="DC Community Event">
+            <h3>DC Pride Parade</h3>
+            <p>June 27, 2024</p>
+            <p>Dupont Circle</p>
+            <button class="ticket-btn">Free Entry</button>
+        </div>
+        <div class="event-card">
+            <img src="/images/event9.jpg" alt="DC Food Event">
+            <h3>DC Restaurant Week</h3>
+            <p>June 28-July 7, 2024</p>
+            <p>Various Restaurants</p>
+            <button class="ticket-btn">View Menus</button>
+        </div>
+    </div>
+</div>
 
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 8000); 
-        }
-    </script>
+<!-- Newsletter Section -->
+<div class="newsletter">
+    <h2>Stay Updated with DC Events</h2>
+    <p>Subscribe to our newsletter for weekly event updates and exclusive offers!</p>
+    <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email">
+        <button type="submit">Subscribe</button>
+    </form>
+</div>
 
 <!-- Footer -->
 
 <hr width="100%" size="2">
 <footer>
-    <div class="center">
-        <a class="text" href="#">About Us</a>
-        ||
-        <a class="text" href="#">Contact Us</a>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>About DC EventBuzz</h3>
+            <p>Your one-stop destination for discovering the best events in Washington, DC.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <a href="#">Browse Events</a>
+            <a href="#">Sell Tickets</a>
+            <a href="#">Venue Directory</a>
+        </div>
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: info@dceventbuzz.com</p>
+            <p>Phone: (202) 555-0123</p>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 DC EventBuzz. All rights reserved.</p>
     </div>
 </footer>
 <hr width="100%" size="2">
+
+<!-- Slideshow Script -->
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 8000); 
+    }
+</script>
 
 </body>
 </html>

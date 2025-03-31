@@ -2,27 +2,29 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="images/Logo 3.png">
-    <img src="images/Logo.png" style="width:08%" class="center">
-    <title>DC EventBuzz - Find Events in Washington, DC</title>
-    <link href="slideshow.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="images/Logo 3.png">
+        <img src="images/Logo.png" style="width:08%" class="center">
+        <title>DC EventBuzz - Find Events in Washington, DC</title>
+        <link href="slideshow.css" rel="stylesheet" />
+        <link href="style.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    </head>
+    
 
 <!-- Header -->
 
 <body>
     
     <header>
-    <br>
-    <div>
-        <h1 class="header-1"> Welcome to EventBuzz</h1>
-    </div>
-    </header>
+        <br>
+        <div>
+            <h1 class="header-1"> Welcome to EventBuzz</h1>
+        </div>
+        </header>
+    
 
 <!-- Search Section -->
 <div class="search-container">
@@ -57,35 +59,10 @@
         <li><a href="#">Arts & Culture</a></li>
         <li><a href="#">Food & Drink</a></li>
         <li><a href="#">Community</a></li>
-        <li><a href="#">My Events</a></li>
     </ul>
 </nav>
 
-<!-- Main Body / Slideshow -->
-
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            <img src="images/event1.jpg" alt="DC Concert Event" style="width:100%">
-            <div class="slide-caption">Food</div>
-        </div>
-
-        <div class="mySlides fade">
-            <img src="images/event2.jpg" alt="DC Sports Event" style="width:100%">
-            <div class="slide-caption">Hotels</div>
-        </div>
-
-        <div class="mySlides fade">
-            <img src="images/event8.jpg" alt="DC Arts Event" style="width:100%">
-            <div class="slide-caption">Music</div>
-        </div>
-
-        <div class="mySlides fade">
-            <img src="images/event9.jpg" alt="image" style="width: 100%;">
-            <div class="slide-caption">Cafes</div>
-        </div>
-    </div>
-
-<!-- Featured Events Section -->
+<!-- My Events Section -->
 <div class="featured-events">
     <h2>Featured Events This Week</h2>
     <div class="events-grid">
@@ -200,32 +177,6 @@
     </div>
 </footer>
 <hr width="100%" size="2">
-
-<!-- Slideshow Script -->
-<script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) { slideIndex = 1 }
-        slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides, 8000); 
-    }
-</script>
 
 </body>
 </html>

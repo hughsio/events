@@ -70,14 +70,14 @@
                 <button class="ticket-btn">Free Entry</button>
             </div>
             <div class="event-card">
-                <img src="../images/event3.jpg" alt="DC Outdoor Event">
+                <img src="../images/event9.jpg" alt="DC Outdoor Event">
                 <h3>Potomac River Kayaking</h3>
                 <p>June 23, 2024</p>
                 <p>Georgetown Waterfront</p>
                 <button class="ticket-btn">Get Tickets</button>
             </div>
             <div class="event-card">
-                <img src="../images/event4.jpg" alt="DC Outdoor Event">
+                <img src="../images/event1.jpg" alt="DC Outdoor Event">
                 <h3>DC Bike Tour</h3>
                 <p>June 24, 2024</p>
                 <p>Various Locations</p>
@@ -131,29 +131,6 @@
     <hr width="100%" size="2">
 
     <!-- Slideshow Script -->
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 8000); 
-        }
-    </script>
+    <script src="../slideshow.js"></script>
 </body>
 </html> 

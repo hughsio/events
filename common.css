@@ -27,7 +27,6 @@ body {
 .header {
     background: linear-gradient(135deg, #4d02be, #420bdc);
     padding: 2rem 0;
-    color: white;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     text-align: center;
 }
@@ -117,7 +116,6 @@ nav {
     align-items: center;
     gap: 2rem;
     list-style: none;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
     flex-wrap: nowrap;

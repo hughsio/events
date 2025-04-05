@@ -16,7 +16,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 20%;
 }
 
 /* ========== HEADER STYLES ========== */
@@ -116,7 +116,7 @@ header img {
     justify-content: center;
     align-items: center;
     background: linear-gradient(135deg, #af3434, #ca1717);
-    padding: 15px 0;
+    padding: 5px 0;
     list-style: none;
     margin: 0;
     flex-wrap: wrap;
